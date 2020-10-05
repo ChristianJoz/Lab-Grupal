@@ -3,8 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.labgrupal.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/formulario_producto"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Formulario Producto"
+        app:showAsAction="never" />
+
+
+
+    <item
+        android:id="@+id/formulario_usuario"
+        android:orderInCategory="100"
+        android:title="Formulario Usuario"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/formulario_categoria"
+        android:orderInCategory="100"
+        android:title="Formulario Categoria"
         app:showAsAction="never" />
 </menu>

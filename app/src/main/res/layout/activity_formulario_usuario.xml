@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#D18BF9"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FormularioProducto"
- >
-
+    tools:context=".FormularioUsuario">
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATOS DEL ARTÍCULO"
+        android:text="Regristro Usuarios"
         android:textAlignment="center"
         android:layout_marginTop="20dp"
         android:textSize="26dp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,10 +38,10 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="167dp"
-                android:src="@drawable/producto" />
+                android:src="@drawable/usuario" />
 
             <EditText
-                android:id="@+id/id_producto"
+                android:id="@+id/id_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -61,7 +61,7 @@
 
 
             <EditText
-                android:id="@+id/pro_nombre"
+                android:id="@+id/nombre_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
@@ -71,7 +71,23 @@
                 android:drawableStart="@drawable/nombre"
                 android:drawableLeft="@drawable/nombre"
                 android:drawablePadding="5dp"
-                android:hint="lngrese nombre del producto"
+                android:hint="Nombre Usuario"
+                android:paddingLeft="25dp" />
+
+
+
+            <EditText
+                android:id="@+id/Apellido_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="#fff"
+                android:drawableStart="@drawable/nombre"
+                android:drawableLeft="@drawable/nombre"
+                android:drawablePadding="5dp"
+                android:hint="Apellido Usuario"
                 android:paddingLeft="25dp" />
 
 
@@ -94,38 +110,37 @@
 
 
             <EditText
-                android:id="@+id/pro_stock"
+                android:id="@+id/usuario_correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="#fff"
-                android:drawableStart="@drawable/stock"
-                android:drawableLeft="@drawable/stock"
+                android:drawableStart="@drawable/correo"
+                android:drawableLeft="@drawable/correo"
                 android:drawablePadding="5dp"
-                android:hint="#Stock"
-                android:inputType="number"
+                android:hint="Correo Usuario"
                 android:paddingLeft="25dp" />
 
 
             <EditText
-                android:id="@+id/pro_precio"
+                android:id="@+id/clave_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="#fff"
-                android:drawableStart="@drawable/money"
-                android:drawableLeft="@drawable/money"
+                android:drawableStart="@drawable/clave"
+                android:drawableLeft="@drawable/clave"
                 android:drawablePadding="5dp"
-                android:hint="Precio del Artículo"
-                android:inputType="numberDecimal"
+                android:hint="clave"
+                android:inputType="textPassword"
                 android:paddingLeft="25dp" />
 
             <EditText
-                android:id="@+id/pro_estado"
+                android:id="@+id/tipo_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
@@ -135,26 +150,60 @@
                 android:drawableStart="@drawable/estado"
                 android:drawableLeft="@drawable/estado"
                 android:drawablePadding="5dp"
-                android:hint="Estado Producto"
-                android:inputType="number"
+                android:hint="Tipo usuario"
                 android:paddingLeft="25dp" />
 
 
 
+
             <EditText
-                android:id="@+id/id_categoria"
+                android:id="@+id/estado_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="#fff"
-                android:drawableStart="@drawable/cat"
-                android:drawableLeft="@drawable/cat"
+                android:drawableStart="@drawable/estado"
+                android:drawableLeft="@drawable/estado"
                 android:drawablePadding="5dp"
-                android:hint="Categoria"
-
+                android:hint="Estado"
                 android:paddingLeft="25dp" />
+
+
+            <EditText
+                android:id="@+id/pregunta_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="#fff"
+                android:drawableStart="@drawable/pregunta"
+                android:drawableLeft="@drawable/pregunta"
+                android:drawablePadding="5dp"
+                android:hint="Pregunta Secreta"
+                android:paddingLeft="25dp" />
+
+
+
+
+            <EditText
+                android:id="@+id/respuesta_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="#fff"
+                android:drawableStart="@drawable/respuesta"
+                android:drawableLeft="@drawable/respuesta"
+                android:drawablePadding="5dp"
+                android:hint="Respuesta"
+                android:paddingLeft="25dp" />
+
+
+
 
 
 
@@ -173,7 +222,7 @@
                 android:background="@drawable/hola1"
                 android:drawableRight="@drawable/save"
                 android:drawablePadding="-140dp"
-                android:onClick="save"
+                android:onClick="save2"
                 android:paddingRight="100dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
@@ -193,7 +242,7 @@
                 android:background="@drawable/hola1"
                 android:drawableRight="@drawable/eliminar"
                 android:drawablePadding="-140dp"
-                android:onClick="delete"
+                android:onClick="delete2"
                 android:paddingRight="100dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
