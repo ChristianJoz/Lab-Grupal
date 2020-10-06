@@ -21,4 +21,10 @@
         android:orderInCategory="100"
         android:title="Formulario Categoria"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/acerca_de"
+        android:orderInCategory="100"
+        android:title="Creadores"
+        app:showAsAction="never" />
 </menu>
