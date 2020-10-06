@@ -8,25 +8,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/azul"
         android:orientation="vertical">
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="167dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/itca" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intengrantes:"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:textSize="40dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-Karla Vanessa"
+            android:text="-Karla Vanessa Garcia Faustino"
             android:layout_gravity="center"
             android:textSize="27dp"
             android:layout_marginTop="20dp"/>
@@ -34,28 +37,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-Carlos Daniel"
+            android:text="-Carlos Daniel Privado Urbina"
             android:layout_gravity="center"
             android:textSize="27dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-Christian Josue"
+            android:text="-Christian Josue Morales Alvares"
             android:layout_gravity="center"
             android:textSize="27dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-Walmer Esteban"
+            android:text="-Walmer Esteban Guido Martinez"
             android:layout_gravity="center"
             android:textSize="27dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-Isaura Mariela"
+            android:text="-Isaura Mariela Castro Sanchez"
             android:layout_gravity="center"
             android:textSize="27dp"/>
 
