@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#465EE4"
+
+    tools:context=".Acerca_de">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITCA FEPADE REGIONAL ZACATECOLUCA"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del completo:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karla Vaness Garcia Faustino"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/yo"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del completo:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Christian Josue Morales Alvares"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/christian"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del completo:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carlos Daniel Privado Urbina"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/privado"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del completo:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walmer Esteban Guido Martinez"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/walmer"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del completo:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Isaura Mariela Castro Sanchez"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/mariela"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grupo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistemas 22 A "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:textStyle="normal"
+                android:textSize="15dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
