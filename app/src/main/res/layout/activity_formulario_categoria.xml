@@ -40,24 +40,7 @@
                 android:layout_height="167dp"
                 android:src="@drawable/categoria" />
 
-            <EditText
-                android:id="@+id/id_categoria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:background="#fff"
-                android:drawableStart="@drawable/id"
-                android:drawablePadding="5dp"
-                android:hint="lngrese el ID Categoria"
-                android:inputType="number"
-                android:paddingLeft="25dp"
-                android:shadowDx="-8"
-                android:shadowDy="-9"
-                android:shadowRadius="5"
-                android:textColor="#282828"
-                android:drawableLeft="@drawable/id"
-                />
+
 
 
 
@@ -121,26 +104,6 @@
                 android:shadowRadius="8"
                 android:text="Guardar"
                 android:textColor="#fff" />
-
-
-            <Button
-                android:id="@+id/btn_eliminar_cat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/hola1"
-                android:drawableRight="@drawable/eliminar"
-                android:drawablePadding="-140dp"
-                android:paddingRight="100dp"
-                android:shadowColor="#2314A8"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                android:text="Borrar"
-                android:textColor="#fff" />
-
 
 
 

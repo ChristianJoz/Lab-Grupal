@@ -39,25 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="167dp"
                 android:src="@drawable/usuario" />
-
-            <EditText
-                android:id="@+id/id_usuario"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:background="#fff"
-                android:drawableStart="@drawable/id"
-                android:drawablePadding="5dp"
-                android:hint="lngrese el ID"
-                android:inputType="number"
-                android:paddingLeft="25dp"
-                android:shadowDx="-8"
-                android:shadowDy="-9"
-                android:shadowRadius="5"
-                android:textColor="#282828"
-                android:drawableLeft="@drawable/id" />
-
+            
 
 
             <EditText
@@ -92,21 +74,6 @@
 
 
 
-            <EditText
-                android:id="@+id/pro_descripcion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="12dp"
-                android:background="#fff"
-                android:drawableStart="@drawable/ic_escria"
-                android:drawableLeft="@drawable/ic_escria"
-                android:drawablePadding="5dp"
-                android:hint="lngrese la descripción del producto"
-                android:paddingLeft="25dp" />
-
-
 
 
             <EditText
@@ -116,7 +83,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
-                android:background="#fff"
+                android:background= "#fff"
                 android:drawableStart="@drawable/correo"
                 android:drawableLeft="@drawable/correo"
                 android:drawablePadding="5dp"
@@ -222,7 +189,6 @@
                 android:background="@drawable/hola1"
                 android:drawableRight="@drawable/save"
                 android:drawablePadding="-140dp"
-                android:onClick="save2"
                 android:paddingRight="100dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
@@ -230,27 +196,6 @@
                 android:shadowRadius="8"
                 android:text="Guardar"
                 android:textColor="#fff" />
-
-
-            <Button
-                android:id="@+id/btn_eliminar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/hola1"
-                android:drawableRight="@drawable/eliminar"
-                android:drawablePadding="-140dp"
-                android:onClick="delete2"
-                android:paddingRight="100dp"
-                android:shadowColor="#2314A8"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                android:text="Borrar"
-                android:textColor="#fff" />
-
 
 
 
