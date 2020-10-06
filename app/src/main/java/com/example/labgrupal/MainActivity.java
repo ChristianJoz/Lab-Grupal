@@ -1,5 +1,6 @@
 package com.example.labgrupal;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -45,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
 
-        if (id == R.id.formulario_producto) {
+        if (id == R.id.acerca_de) {
 
-        }if(id == R.id.formulario_categoria) {
-            return true;
-        }if(id == R.id.formulario_usuario) {
-            return true;
-        }
+            Intent acerca_de = new Intent(MainActivity.this,Acerca_de.class);
+            startActivity(acerca_de);
+
+        } else if (id == R.id.Inicio) {
+            Intent Inicio = new Intent(MainActivity.this,MainActivity.class);
+            startActivity(Inicio);}
 
         return super.onOptionsItemSelected(item);
     }

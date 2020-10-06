@@ -2,29 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.labgrupal.MainActivity">
-    <item
-        android:id="@+id/formulario_producto"
-        android:orderInCategory="100"
-        android:title="Formulario Producto"
-        app:showAsAction="never" />
-
 
 
     <item
-        android:id="@+id/formulario_usuario"
-        android:orderInCategory="100"
-        android:title="Formulario Usuario"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/formulario_categoria"
-        android:orderInCategory="100"
-        android:title="Formulario Categoria"
+        android:id="@+id/Inicio"
+        android:orderInCategory="1"
+        android:title="Inicio"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/acerca_de"
-        android:orderInCategory="100"
+        android:orderInCategory="2"
         android:title="Creadores"
         app:showAsAction="never" />
 </menu>
