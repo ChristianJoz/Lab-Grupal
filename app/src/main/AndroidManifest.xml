@@ -9,14 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormularioUsuario"></activity>
-        <activity android:name=".formularioCategoria" />
-        <activity android:name=".SplashCreen">
+        <activity android:name=".recycler_Usuario">
+
+        </activity>
+        <activity android:name=".FormularioUsuario" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".formularioCategoria" />
+        <activity android:name=".SplashCreen">
+
         </activity>
         <activity android:name=".FormularioProducto" />
         <activity android:name=".Bienvenido" />
