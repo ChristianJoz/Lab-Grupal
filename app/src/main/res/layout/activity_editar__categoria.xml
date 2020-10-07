@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D18BF9"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Editar_Categoria">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="26dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="167dp"
+                android:src="@drawable/categoria" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/nombre_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="#fff"
+                android:drawableStart="@drawable/nombre"
+                android:drawableLeft="@drawable/nombre"
+                android:drawablePadding="5dp"
+                android:hint="Nombre Cagetoria"
+                android:paddingLeft="25dp" />
+
+
+
+            <EditText
+                android:id="@+id/estado_Categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="#fff"
+                android:drawableStart="@drawable/ic_escria"
+                android:drawableLeft="@drawable/ic_escria"
+                android:drawablePadding="5dp"
+                android:hint="Estado Categoria"
+                android:paddingLeft="25dp"
+                android:inputType="number"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_guardar_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/hola1"
+                android:drawableRight="@drawable/save"
+                android:drawablePadding="-140dp"
+                android:paddingRight="100dp"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="Guardar"
+                android:textColor="#fff" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
