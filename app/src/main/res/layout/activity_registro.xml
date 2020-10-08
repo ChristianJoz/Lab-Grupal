@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="382dp"
         android:layout_height="677dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
@@ -20,6 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="150dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -28,8 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+
                 android:inputType="textPersonName"
-                android:text="Correo"
+                android:hint="Correo"
                 android:background="#fff"/>
 
             <EditText
@@ -41,7 +43,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPassword"
-                android:text="contraseña"/>
+                android:hint="contraseña"/>
 
 
             <EditText
@@ -52,13 +54,12 @@
                 android:inputType="textPassword"
                 android:background="#fff"
                 android:layout_marginTop="10dp"
-            android:text="confirmar contraseña"/>
+            android:hint="confirmar contraseña"/>
 
             <Button
                 android:id="@+id/registrarse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:onClick="registrarus"
                 android:text="Registrase" />
         </LinearLayout>
