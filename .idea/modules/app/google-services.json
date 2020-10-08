@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "65200426425",
+    "firebase_url": "https://lab-grupal-886a8.firebaseio.com",
+    "project_id": "lab-grupal-886a8",
+    "storage_bucket": "lab-grupal-886a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65200426425:android:69384af916291e8b46fa68",
+        "android_client_info": {
+          "package_name": "com.example.labgrupal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65200426425-k95f8s3fg8028kmoqjqt1v28g44g16ol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.labgrupal",
+            "certificate_hash": "39f986b6b6a812ea8a9779d1ea7b193ef19f02ea"
+          }
+        },
+        {
+          "client_id": "65200426425-jng6e18pfb304bok0vabgo2u2rfag31p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeCiuqxwc8FdHuywf_7GfLyBvGHddIb38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65200426425-jng6e18pfb304bok0vabgo2u2rfag31p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
