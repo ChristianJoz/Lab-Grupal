@@ -10,28 +10,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycler_productos"></activity>
-        <activity android:name=".recycler_Categoria"></activity>
-        <activity android:name=".formularioCategoria"></activity>
-        <activity android:name=".InicioSistema">
+        <activity android:name=".AcercaDe">
+
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".recycler_productos" />
+        <activity android:name=".recycler_Categoria" />
+        <activity android:name=".formularioCategoria" />
+        <activity android:name=".InicioSistema"></activity>
+        <activity android:name=".Editar_Categoria" />
+        <activity android:name=".Editar_Producto" />
+        <activity android:name=".Editar_Usuario" />
+        <activity android:name=".recycler_Usuario" />
+        <activity android:name=".FormularioUsuario" />
+        <activity android:name=".SplashCreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Editar_Categoria" />
-        <activity android:name=".Editar_Producto" />
-        <activity android:name=".Editar_Usuario" />
-        <activity android:name=".recycler_Usuario" />
-        <activity android:name=".FormularioUsuario" />
-        <activity android:name=".SplashCreen" />
-        <activity android:name=".FormularioProducto"></activity>
+        <activity android:name=".FormularioProducto" />
         <activity android:name=".Bienvenido" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="WrongManifestParent"></activity>
     </application>
 
 </manifest>

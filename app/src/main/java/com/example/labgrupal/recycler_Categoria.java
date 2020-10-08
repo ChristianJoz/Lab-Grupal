@@ -43,12 +43,12 @@ public class recycler_Categoria extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.item_siguiente) {
-            Intent i = new Intent(recycler_Categoria.this , formularioCategoria.class);
+        if (id == R.id.Inisistema) {
+            Intent i = new Intent(recycler_Categoria.this , InicioSistema.class);
             startActivity(i);
             return true;
-        }else if (id == R.id.item_Inicio) {
-            Intent i = new Intent(recycler_Categoria.this , InicioSistema.class);
+        }else if (id==R.id.Nuevo){
+            Intent i = new Intent(recycler_Categoria.this , formularioCategoria.class);
             startActivity(i);
             return true;
         }

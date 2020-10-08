@@ -35,16 +35,16 @@ public class AdaptadorProductos extends RecyclerView.Adapter<AdaptadorProductos.
 
         holder.textViewNombreProducto1.setText(dto.getNombre_producto());
         holder.textViewDescripcioProductos1.setText(dto.getDescripcion_producto());
-        holder.textViewCatidaProducto1.setText(dto.getCantidad_producto());
+        holder.textViewCatidaProducto1.setText(String.valueOf(dto.getCantidad_producto()));
         holder.textViewPrecioProducto1.setText(String.valueOf(dto.getPrecio()));
-        holder.textViewEstadoProducto1.setText(dto.getEstado());
-        holder.textViewCategoriaProductos1.setText(dto.getId_categoria());
+        holder.textViewEstadoProducto1.setText(String.valueOf(dto.getEstado()));
+        holder.textViewCategoriaProductos1.setText(String.valueOf(dto.getId_categoria()));
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return ProductosList.size();
     }
 
     public static class ProductosViewHolder extends RecyclerView.ViewHolder {

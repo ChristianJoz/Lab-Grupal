@@ -222,7 +222,17 @@ public class BaseDeDato extends SQLiteOpenHelper {
         return categoria;
     }
 
-
+    public List<Modelo_Productos> mostrarProductos(){
+        SQLiteDatabase bd = this.getReadableDatabase();
+        Cursor cursor = bd.rawQuery("SELECT * FROM tb_producto order by id_producto desc", null);
+        List<Modelo_Productos> productos = new ArrayList<>();
+        if(cursor.moveToFirst()){
+            do{
+                    productos.add(new Modelo_Productos(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3), cursor.getInt(4), cursor.getString(5),cursor.getInt(6)));
+            }while (cursor.moveToNext());
+        }
+        return productos;
+    }
 
 }
 

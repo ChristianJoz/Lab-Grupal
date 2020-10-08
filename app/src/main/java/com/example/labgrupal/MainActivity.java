@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -48,13 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.acerca_de) {
 
-            Intent acerca_de = new Intent(MainActivity.this,Acerca_de.class);
+            Intent acerca_de = new Intent(MainActivity.this, Acerca_de.class);
             startActivity(acerca_de);
 
-        } else if (id == R.id.Inicio) {
-            Intent Inicio = new Intent(MainActivity.this,MainActivity.class);
-            startActivity(Inicio);}
+        }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

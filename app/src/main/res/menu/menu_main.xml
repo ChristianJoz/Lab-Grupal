@@ -3,13 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.labgrupal.MainActivity">
 
-
-    <item
-        android:id="@+id/Inicio"
-        android:orderInCategory="1"
-        android:title="Inicio"
-        app:showAsAction="never" />
-
     <item
         android:id="@+id/acerca_de"
         android:orderInCategory="2"

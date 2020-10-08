@@ -54,8 +54,8 @@ public class formularioCategoria extends AppCompatActivity {
 
             if (conexion.InsertarCategorias(datos)) {
                 Toast.makeText(formularioCategoria.this, "¡Categoria registrada satisfactoriamente!", Toast.LENGTH_SHORT).show();
-                //Intent lu = new Intent(formularioCategoria.this, recycler_Categoria.class);
-                //startActivity(lu);
+                Intent lu = new Intent(formularioCategoria.this, recycler_Categoria.class);
+                startActivity(lu);
             }
             else{
                 Toast.makeText(getApplicationContext(), "Error. Ya existe un registro\n" +
