@@ -15,6 +15,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import static android.content.ContentValues.TAG;
+
 public class BaseDeDato extends SQLiteOpenHelper {
     public BaseDeDato(@Nullable Context context) {
         super(context, "Inventario.db", null, 1);
@@ -120,6 +122,107 @@ public class BaseDeDato extends SQLiteOpenHelper {
         }
         return estado;
     }
+
+    public boolean InsertProducto(Modelo_Productos datos) {
+        boolean estado = true;
+        int resultado;
+        SQLiteDatabase bd = this.getWritableDatabase();
+        try {
+
+            String nombre = datos.getNombre_producto();
+            String descripcion = datos.getDescripcion_producto();
+            int cantidad = datos.getCantidad_producto();
+            double precio = datos.getPrecio();
+            String unidadMedida = datos.getUnidad_medida();
+            int idCategoria = datos.getId_categoria();
+            int estadoProducto = datos.getEstado();
+
+            Cursor fila = bd().rawQuery("select nom_producto from tb_producto where nom_producto = '"+nombre+"'", null);
+
+            if ( fila.moveToFirst() ) {
+                estado = false;
+            }else{
+                String SQL = ("INSERT INTO tb_producto (nom_producto, des_producto, catidad, precio, unidad_medida, id_categoria, estado_producto) " +
+                        "VALUES ('"+nombre+"','"+descripcion+"',"+cantidad+","+precio+",'"+unidadMedida+"',"+idCategoria+","+estadoProducto + ");");
+                bd().execSQL(SQL);
+                bd().close();
+                estado = true;
+            }
+
+        } catch (Exception e) {
+            estado = false;
+            Log.e("error.", e.toString());
+        }
+        return estado;
+    }
+    public int getIdCategoria(String nombreCategoria) {
+
+        Cursor fila = bd().rawQuery("select id_categoria from tb_categoria where nom_categoria = '"+nombreCategoria+"';", null);
+
+        int id = -1;
+        if (fila.moveToFirst()){
+            Log.i(TAG, "id_categoria: " + fila.getInt(fila.getColumnIndex("id_categoria")));
+            id = fila.getInt(fila.getColumnIndex("id_categoria"));
+        }
+
+        return id;
+    }
+
+    public List<String> mostrarcategoriaspinner(){
+        SQLiteDatabase bd = this.getReadableDatabase();
+        Cursor cursor = bd.rawQuery("SELECT * FROM tb_categoria ", null);
+        List<String> categorias = new ArrayList<>();
+        if(cursor.moveToFirst()){
+            do{
+                categorias.add(cursor.getString(1));
+                categorias.indexOf(cursor.getInt(0));
+            }while (cursor.moveToNext());
+        }
+        return categorias;
+    }
+
+    public boolean InsertarCategorias(Modelo_Categorias datos) {
+        boolean estado = true;
+        int resultado;
+        SQLiteDatabase bd = this.getWritableDatabase();
+        try {
+            int id_categoria = datos.getId_categoria();
+            String nom_categoria = datos.getNombre_categoria();
+            int estado_categoria = datos.getEstado_categoria();
+
+            Cursor fila = bd().rawQuery("select nom_categoria from tb_categoria where nom_categoria = '"+nom_categoria+"'", null);
+
+            if (fila.moveToFirst() == true) {
+                estado = false;
+            }else{
+                String SQL = ("INSERT INTO tb_categoria \n " +
+                        "(nom_categoria, estado_categoria)\n " +
+                        "VALUES \n " +
+                        "('"+nom_categoria+"','"+String.valueOf(estado_categoria)+"');");
+                bd().execSQL(SQL);
+                bd().close();
+                estado = true;
+            }
+
+        } catch (Exception e) {
+            estado = false;
+            Log.e("error.", e.toString());
+        }
+        return estado;
+    }
+    public List<Modelo_Categorias> mostrarCategorias(){
+        SQLiteDatabase bd = this.getReadableDatabase();
+        Cursor cursor = bd.rawQuery("SELECT * FROM tb_categoria order by id_categoria desc", null);
+        List<Modelo_Categorias> categoria = new ArrayList<>();
+        if(cursor.moveToFirst()){
+            do{
+                categoria.add(new Modelo_Categorias(cursor.getInt(0), cursor.getString(1), cursor.getInt(2)));
+            }while (cursor.moveToNext());
+        }
+        return categoria;
+    }
+
+
 
 }
 
